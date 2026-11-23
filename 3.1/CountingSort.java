@@ -10,5 +10,12 @@ public class CountingSort implements Sorting<Integer> {
     for (int num : nums) {
       counts[num]++;
     }
+    int index = 0;
+    for (int value = 0; value <= MAX_VALUE; value++) {
+      for (int k = 0; k < counts[value]; k++) {
+        nums.set(index, value);
+        index++;
+      }
+    }
   }
 }
