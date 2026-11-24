@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class InsertionSort<T extends Comparable<? super T>> implements Sorting<T> {
+public class InsertionSort<T extends Comparable<T>> implements Sorting<T> {
 
   @Override
   public void sort(List<T> nums) {
